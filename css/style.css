@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+p{
+    margin-bottom: 20%;
+    text-align: center;
+}
+input {
+	text-align: center;
+    font-size: 1.75vh;
+}
+.set_time{
+    margin-bottom: 2vh;
+}
+.data_input{ 
+    display: grid;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+.container{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 10vh;
+}
+.time_left{
+    position: fixed;
+    margin-top: -25vh;
+    font-size: 3vh;
+}
+.timer{
+    padding: 2%;
+}
+.month, .day, .hour, .minute, .second{
+    font-size: 7vh;
+}
+.caption{
+    font-size: 2vh;
+}
+
+
+/* @media only screen and (max-width: 1200px) {
+    .container{
+        margin-top: 30%;
+    }
+} */
