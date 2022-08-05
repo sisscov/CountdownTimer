@@ -22,7 +22,6 @@ input {
     justify-content: center;
     margin-top: 25vh;
 }
-
 .container{
     display: flex;
     justify-content:center ;
@@ -37,16 +36,9 @@ input {
 .timer{
     padding: 2%;
 }
-.month, .day, .hour, .minute, .second{
+.day, .hour, .minute, .second{
     font-size: 7vh;
 }
 .caption{
     font-size: 2vh;
 }
-
-
-/* @media only screen and (max-width: 1200px) {
-    .container{
-        margin-top: 30%;
-    }
-} */

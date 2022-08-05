@@ -15,15 +15,17 @@
   <body>
     <div class="data_input">
       <h3 class="set_time">Set a countdown</h3>
-        <input type="date" name="time-to" id="time_to" />
+      <input
+        type="date"
+        name="time_to"
+        id="time_to"
+        value=""
+        onchange="CalcTime(this.value)"
+      />
     </div>
-    
+
     <div class="container">
       <h1 class="time_left">Time left until the event:</h1>
-      <div class="timer">
-        <p class="month">m</p>
-        <p class="caption">Month</p>
-      </div>
       <div class="timer">
         <p class="day">d</p>
         <p class="caption">Day</p>
@@ -41,5 +43,6 @@
         <p class="caption">Second</p>
       </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
