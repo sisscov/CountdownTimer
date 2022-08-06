@@ -1,44 +1,83 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
-p{
-    margin-bottom: 20%;
-    text-align: center;
+p {
+  margin-bottom: 20%;
+  text-align: center;
 }
 input {
-	text-align: center;
-    font-size: 1.75vh;
+  text-align: center;
+  font-size: 1.75vh;
 }
-.set_time{
-    margin-bottom: 2vh;
+
+.set_time {
+  margin-bottom: 2vh;
+  text-align: center;
+  margin-top: 25vh;
 }
-.data_input{ 
-    display: grid;
-    justify-content: center;
-    margin-top: 25vh;
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
 }
-.container{
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    margin-top: 10vh;
+#name_event,
+#time_to,
+#submit_name {
+  height: 3vh;
 }
-.time_left{
-    position: fixed;
-    margin-top: -25vh;
-    font-size: 3vh;
+#time_to,
+#submit_name {
+  margin-left: 2vw;
 }
-.timer{
-    padding: 2%;
+#submit_name {
+  background: none;
+  border-color: rgb(0, 0, 0);
+  border-width: 0.5px;
+  border-radius: 5px;
+  min-width: 4vw;
+  width: 4vw;
+  height: 3.5vh;
 }
-.day, .hour, .minute, .second{
-    font-size: 7vh;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
 }
-.caption{
-    font-size: 2vh;
+#time_left {
+  position: fixed;
+  margin-top: -25vh;
+  font-size: 3vh;
+}
+.timer {
+  padding: 2%;
+}
+.day,
+.hour,
+.minute,
+.second {
+  font-size: 7vh;
+  text-align: center;
+}
+
+.caption {
+  font-size: 2vh;
+}
+
+@media only screen and (max-width: 850px) {
+  #submit_name {
+    width: 6vw;
+  }
+  .day,
+  .hour,
+  .minute,
+  .second {
+    font-size: 5.75vh;
+  }
 }

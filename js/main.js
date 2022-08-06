@@ -1,11 +1,15 @@
 function CalcTime(dates) {
-
+  getEventName();
   clearInterval();
 
-  if (typeof dates != "undefined") {
+  if (dates != "") {
     date = new Date(dates).getTime();
+  } else {
+    alert("Please enter the date of the event");
+    CountDown.preventDefault();
   }
-//time calculation and text replacement
+
+  //time calculation and text replacement
   function CountDown() {
     let now = new Date().getTime();
     let fromTo = date - now;
@@ -19,8 +23,19 @@ function CalcTime(dates) {
     document.querySelector(".minute").innerHTML = minute;
     document.querySelector(".second").innerHTML = second;
   }
-  
   setInterval(function () {
     CountDown();
   }, 1000);
+}
+
+//checking the name of the event
+function getEventName() {
+  let eventName = document.getElementById("name_event").value;
+  if (eventName == "") {
+    alert("Please enter the name of the event");
+    CountDown.preventDefault();
+  } else {
+    document.getElementById("time_left").innerHTML =
+      "Time left until " + eventName + ":";
+  }
 }
